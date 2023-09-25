@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "2021 World's Happines Score",
+    "title": "2023 World's Happines Score",
     "width": 850,
     "height": 450,
     "config": {
@@ -45,7 +45,7 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-            "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Homework%20Week%209/2021.csv"
+            "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Homework%20Week%209/dataset.csv"
             },
             "key": "Country name",
             "fields": ["Ladder score"]
