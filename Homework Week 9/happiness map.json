@@ -1,14 +1,14 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "2020 World's Happines Score",
-    "width": 800,
-    "height": 400,
+    "width": 850,
+    "height": 450,
     "config": {
       "background":"#F5F5F5"
     },
     "projection": {"type": "equalEarth"},
     "data": {
-        "url": "https://raw.githubusercontent.com/JiazhouLiu/FIT3179/main/VegaLite/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+        "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Homework%20Week%209/ne_110m_admin_0_countries.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
     },
     "projection": {"type": "equalEarth"},
@@ -18,11 +18,11 @@
         "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
         "format": {"type": "topojson", "feature": "oceans"}
       },
-      "mark": {"type": "geoshape", "fill": "#a4e7ff"}
+      "mark": {"type": "geoshape", "fill": "#bfeeff"}
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/WorldMapWithGraticules.topojson",
+        "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Homework%20Week%209/ne_110m_graticules_30.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
@@ -45,7 +45,7 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-            "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/2020.csv"
+            "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Homework%20Week%209/2020.csv"
             },
             "key": "Country name",
             "fields": ["Ladder score"]
@@ -58,7 +58,7 @@
             "field": "Ladder score",
             "type": "quantitative",
             "scale":{
-            "domain": [2.8, 7.7],
+            "domain": [2.7, 7.6],
             "range": ["#FFEADD", "#FF6666"]
             }
           },
@@ -71,3 +71,4 @@
       }
     ]
 }
+    
