@@ -8,7 +8,7 @@
     },
     "projection": {"type": "equalEarth"},
     "data": {
-        "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Homework%20Week%209/ne_110m_admin_0_countries.topojson",
+        "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/HW_W9/ne_110m_admin_0_countries.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
     },
     "projection": {"type": "equalEarth"},
@@ -22,7 +22,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Homework%20Week%209/ne_110m_graticules_30.topojson",
+        "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/HW_W9/ne_110m_graticules_30.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
@@ -45,7 +45,7 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-            "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Homework%20Week%209/dataset.csv"
+            "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/HW_W9/data/dataset.csv"
             },
             "key": "Country name",
             "fields": ["Ladder score"]
