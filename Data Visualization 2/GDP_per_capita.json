@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Data%20Visualization%202/data/dataset2023.csv"
+  },
+  "width": 300,
+  "height": 300,
+  "config": {
+    "background":"#F5F5F5",
+    "view": {"stroke": "transparent"},
+    "axis": {"grid": false}
+  },
+  "title": "GDP per Capita vs. Happiness",
+  "selection": {
+    "region_highlight": {
+      "type": "multi",
+      "fields": ["Regional Indicator"],
+      "bind": "legend"
+      }
+    },
+  "mark": "circle",
+  "encoding": {
+    "y": {
+    "field": "Ladder Score",
+    "type": "quantitative",
+    "title": "Happiness Score"
+    },
+    "x": {
+    "field": "Explained By Logged GDP Per Capita",
+    "type": "quantitative"
+    },
+    "color": {
+      "field": "Regional Indicator"
+    },
+    "opacity": {
+      "condition": {"selection": "region_highlight", "value": 1},
+      "value": 0.1
+      },
+  "tooltip": [
+          {"field": "Country Name", "type": "nominal", "title":"Country"},
+          {"field": "Ladder Score", "type": "quantitative", "title": "Happiness Score"}
+        ]
+  }
+}
