@@ -6,7 +6,9 @@
     "width": 300,
     "height": 300,
     "config": {
-      "background":"#F5F5F5"
+      "background":"#F5F5F5",
+      "view": {"stroke": "transparent"},
+      "axis": {"grid": false}
     },
     "title": "Social Support vs. Happiness",
     "selection": {

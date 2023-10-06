@@ -3,7 +3,7 @@
     "description": "Vega-Lite version of bar chart from https://observablehq.com/@d3/learn-d3-scales.",
     "width": 400,
     "config": {
-      "background":"#F5F5F5",
+      "background":"#FFF3E2",
       "view": {"stroke": "transparent"},
       "axis": {"grid": false}
     },
@@ -41,7 +41,7 @@
           "title": "Hapiness Score",
           "scale": {
             "type": "ordinal",
-            "range": ["#ffe7e7","#ffdbdb","#ffcece","#ffbbbb", "#ff9e9e"]
+            "range": ["#ffe7e7","#ffdbdb","#ffcece","#ffbbbb", "#ff9e9e", "#FB928E"]
           } 
         },
         "tooltip": [
