@@ -1,0 +1,86 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Data%20Visualization%202/data/dataset2023.csv"
+    },
+     "params": [
+      {
+        "name": "Region_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+              "Western Europe",
+              "Middle East and North Africa",
+              "North America and ANZ",
+              "Central and Eastern Europe",
+              "Latin America and Caribbean",
+              "Southeast Asia",
+              "East Asia",
+              "Commonwealth of Independent States",
+              "Sub-Saharan Africa",
+              "South Asia"
+          ],
+          "labels": [
+            "Show All",
+            "Western Europe",
+              "Middle East and North Africa",
+              "North America and ANZ",
+              "Central and Eastern Europe",
+              "Latin America and Caribbean",
+              "Southeast Asia",
+              "East Asia",
+              "Commonwealth of Independent States",
+              "Sub-Saharan Africa",
+              "South Asia"
+          ],
+          "name": "Region Selection: "
+        }
+      }
+      ],
+    "transform": [
+      {
+        "filter": "Region_selection == null || datum['Regional Indicator']  == Region_selection"
+      }
+    ],
+    "width": 300,
+    "height": 300,
+    "config": {
+      "background":"#FFF3E2",
+      "view": {"stroke": "transparent"},
+      "axis": {"grid": false}
+    },
+    "title": "GDP per Capita vs. Happiness",
+    "selection": {
+      "region_highlight": {
+        "type": "multi",
+        "fields": ["Regional Indicator"],
+        "bind": "legend"
+        }
+      },
+    "mark": "circle",
+    "encoding": {
+      "y": {
+      "field": "Ladder Score",
+      "type": "quantitative",
+      "title": "Happiness Score"
+      },
+      "x": {
+      "field": "Explained By Logged GDP Per Capita",
+      "type": "quantitative",
+      "title": "Logged GDP per Capita"
+      },
+      "color": {
+        "field": "Regional Indicator"
+      },
+      "opacity": {
+        "condition": {"selection": "region_highlight", "value": 0.8},
+        "value": 0.1
+        },
+    "tooltip": [
+            {"field": "Country Name", "type": "nominal", "title":"Country"},
+            {"field": "Ladder Score", "type": "quantitative", "title": "Happiness Score"}
+          ]
+    
+    }
+  }
