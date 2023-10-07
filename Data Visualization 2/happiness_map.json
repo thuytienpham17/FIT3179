@@ -4,7 +4,7 @@
     "width": 800,
     "height": 400,
     "config": {
-      "background":"#F5F5F5",
+      "background":"#FFF3E2",
       "view": {"stroke": "transparent"}
     },
     "projection": {"type": "equalEarth"},
@@ -60,7 +60,7 @@
             "type": "quantitative",
             "scale":{
             "domain": [1.0, 8.0],
-            "range": ["#FFEADD", "#FF6666"]
+            "range": ["#FFC3C3", "#E21818"]
             }
           },
           "tooltip": [

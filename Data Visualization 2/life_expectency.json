@@ -27,7 +27,8 @@
       },
       "x": {
       "field": "Explained By Healthy Life Expectancy",
-      "type": "quantitative"
+      "type": "quantitative",
+      "title": "Healthy Life Expectency"
       },
       "color": {
         "field": "Regional Indicator"

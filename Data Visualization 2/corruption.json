@@ -27,7 +27,8 @@
       },
       "x": {
       "field": "Explained By Perceptions Of Corruption",
-      "type": "quantitative"
+      "type": "quantitative",
+      "title": "Perception of Corruption"
       },
       "color": {
         "field": "Regional Indicator"

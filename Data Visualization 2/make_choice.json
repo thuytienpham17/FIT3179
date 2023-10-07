@@ -25,7 +25,8 @@
       },
       "x": {
       "field": "Explained By Freedom To Make Life Choices",
-      "type": "quantitative"
+      "type": "quantitative",
+      "title": "Freedom To Make Life Choices"
       },
       "color": {
         "field": "Regional Indicator"

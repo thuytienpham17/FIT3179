@@ -27,7 +27,8 @@
       },
       "x": {
       "field": "Explained By Generosity",
-      "type": "quantitative"
+      "type": "quantitative",
+      "title": "Generosity"
       },
       "color": {
         "field": "Regional Indicator"
