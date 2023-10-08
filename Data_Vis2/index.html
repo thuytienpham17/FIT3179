@@ -16,22 +16,43 @@
     <script src="generosity.js"></script>
     <script src="corruption.js"></script>
     <script src="gdp.js"></script>
-    <script src="life_expectency.js"></script>
+    <script src="life_expectancy.js"></script>
     <script src="make_choice.js"></script>
     <script src="social_support.js"></script>
 
+    <link rel="stylesheet" href="css.css">
 </head>
 
-<body>
-    <div id="happiness_map"></div>
-    <div id="boxplot"></div>
-    <div id="top10"></div>
-    <div id="generosity"></div>
-    <div id="corruption"></div>
-    <div id="gdp"></div>
-    <div id="life_expectency"></div>
-    <div id="make_choice"></div>
-    <div id="social_support"></div>
+<body id="background">
+    <div class="all_page">
+        <h1> World's Happiness Score Report 2023</h1>
+            <div id="happiness_map"></div>
+
+        <div class="top">
+                <div id="boxplot" >
+                    <h2> Boxplot </h2>
+                </div>
+
+                <div id="top10">
+                    <h2> The Top 10 Happiest Countries</h2>
+                </div>
+
+                <p>With a GitHub Enterprise account, you can restrict access to your GitHub Pages site by publishing it privately. A privately published site can only be accessed by people with read access to the repository the site is published from. You can use privately published sites to share your internal documentation or knowledge base with members of your enterprise.</p>
+        </div>
+
+        <div class="correlation">
+        <h2> The Relationship between Happiness Determinants and Happiness Score </h2>
+                <div id="generosity" class="gen_cor"></div>
+                <div id="corruption" class="gen_cor"></div>
+
+                <div id="gdp" class="gdp_life"></div>
+                <div id="life_expectancy" class="gdp_life"></div>
+
+                <div id="make_choice"  class="choice_social"></div>
+                <div id="social_support"  class="choice_social"></div> 
+                <p>With a GitHub Enterprise account, you can restrict access to your GitHub Pages site by publishing it privately. A privately published site can only be accessed by people with read access to the repository the site is published from. You can use privately published sites to share your internal documentation or knowledge base with members of your enterprise.</p>
+        </div>
+    </div>
 </body>
 
 </html>

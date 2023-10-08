@@ -1,0 +1,74 @@
+body{
+    background-color: #fff6dd;
+    background-color: #494949;   
+}
+
+.all_page {
+    max-width: 80%;
+    margin: auto;
+    background-color: #FFF3E2;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#happiness_map{
+    text-align: center;
+    font-family: "Helvetica";
+}
+
+#boxplot,
+#top10 {
+    width: 50%; 
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.top h2:last-child {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.top p {
+    font-size: 15px;
+    margin: 30px;
+}
+
+.correlation h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}   
+
+.gen_cor,
+.gdp_life,
+.choice_social {
+    float: left; 
+    width: 50%; 
+    box-sizing: border-box; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 35px; 
+    padding-right: 35px;
+}
+
+.correlation p:last-child {
+    font-size: 15px;
+    margin: 30px;
+    padding-bottom: 30px;
+}
+
+

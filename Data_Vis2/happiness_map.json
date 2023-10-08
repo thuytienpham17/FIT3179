@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "2023 World's Happines Score",
     "width": 800,
     "height": 400,
     "config": {

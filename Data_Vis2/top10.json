@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Vega-Lite version of bar chart from https://observablehq.com/@d3/learn-d3-scales.",
-    "width": 300,
+    "width": 450,
     "height": 300,
     "config": {
       "background":"#FFF3E2",

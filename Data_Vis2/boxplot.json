@@ -1,23 +1,30 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Data%20Visualization%202/data/dataset2023.csv"
-    },
-    "width": 300,
-    "height": 200,
-    "config": {
-      "background":"#FFF3E2",
-      "view": {"stroke": "transparent"},
-      "axis": {"grid": false}
-    },
-    "title": "Happiness Score Range in different Regions",
-    "mark": "boxplot",
-            "encoding": {
-                "x": {"field": "Regional Indicator", "type": "ordinal"},
-                "y": {"field": "Ladder Score", "type": "quantitative"},
-                "color": {
-                    "field": "Regional Indicator"
-            }
-    
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Data%20Visualization%202/data/dataset2023.csv"
+  },
+  "width": 450,
+  "height": 300,
+  "config": {
+    "background": "#FFF3E2",
+    "view": { "stroke": "transparent" },
+    "axis": {
+      "grid": false,
+      "labels": false,
+      "tickCount": 0
     }
+  },
+  "title": "Happiness Score Range in Different Regions",
+  "mark": "boxplot",
+  "encoding": {
+    "x": {
+      "field": "Regional Indicator",
+      "type": "ordinal",
+      "title": null
+    },
+    "y": { "field": "Ladder Score", "type": "quantitative" },
+    "color": {
+      "field": "Regional Indicator"
+    }
+  }
 }

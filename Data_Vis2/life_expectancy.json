@@ -10,9 +10,9 @@
       "view": {"stroke": "transparent"},
       "axis": {"grid": false}
     },
-    "title": "Freedom to make choice vs. Happiness",
+    "title": "Healthy Life Expectency vs. Happiness",
     "selection": {
-        "region_highlight": {
+      "region_highlight": {
         "type": "multi",
         "fields": ["Regional Indicator"],
         "bind": "legend"
@@ -26,9 +26,9 @@
       "title": "Happiness Score"
       },
       "x": {
-      "field": "Explained By Freedom To Make Life Choices",
+      "field": "Explained By Healthy Life Expectancy",
       "type": "quantitative",
-      "title": "Freedom To Make Life Choices"
+      "title": "Healthy Life Expectency"
       },
       "color": {
         "field": "Regional Indicator"
