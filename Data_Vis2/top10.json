@@ -22,7 +22,6 @@
         {"name": "🇳🇿", "value": 7.123}
       ]
     },
-    "title": "Top 10 Most Happiness Countries",
     "transform": [
         {
           "calculate": "{'🇫🇮': 'Finland', '🇩🇰': 'Denmark', '🇮🇸': 'Iceland', '🇮🇱': 'Israel', '🇳🇱': 'Netherlands', '🇸🇪': 'Sweden', '🇳🇴': 'Norway', '🇨🇭': 'Switzerland', '🇱🇺': 'Luxembourg', '🇳🇿': 'New Zealand'}[datum.name]",

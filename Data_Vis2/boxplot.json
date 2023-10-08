@@ -14,7 +14,6 @@
       "tickCount": 0
     }
   },
-  "title": "Happiness Score Range in Different Regions",
   "mark": "boxplot",
   "encoding": {
     "x": {

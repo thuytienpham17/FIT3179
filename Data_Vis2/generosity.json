@@ -10,7 +10,6 @@
     "view": {"stroke": "transparent"},
     "axis": {"grid": false}
   },
-  "title": "Generosity vs. Happiness",
   "selection": {
       "region_highlight": {
       "type": "multi",
