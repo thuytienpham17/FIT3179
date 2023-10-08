@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Data%20Visualization%202/data/dataset2023.csv"
+    "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Data_Vis2/dataset2023.csv"
   },
   "width": 350,
   "height": 350,
@@ -10,6 +10,7 @@
     "view": {"stroke": "transparent"},
     "axis": {"grid": false}
   },
+  "title": "Generosity vs. Happiness Score",
   "selection": {
       "region_highlight": {
       "type": "multi",
