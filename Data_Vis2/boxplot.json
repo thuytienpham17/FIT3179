@@ -3,7 +3,12 @@
   "data": {
     "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Data_Vis2/dataset2023.csv"
   },
-  "width": 500,
+  "title": {
+    "text": "Happiness Score Range in Regions",
+    "fontSize": 20,
+    "offset": 20
+  },
+  "width": 450,
   "height": 350,
   "config": {
     "background": "#FFF3E2",
@@ -11,8 +16,14 @@
     "axis": {
       "grid": false,
       "labels": false,
-      "tickCount": 0
-    }
+      "ticks": false
+    },
+    "axisX": {"titleFontSize": 13}, 
+      "axisY": {"titleFontSize": 13, "labels": true},
+      "legend": {
+        "titleFontSize": 13, 
+        "labelFontSize": 12.5
+      }
   },
   "mark": "boxplot",
   "encoding": {
@@ -21,7 +32,7 @@
       "type": "ordinal",
       "title": null
     },
-    "y": { "field": "Ladder Score", "type": "quantitative" },
+    "y": { "field": "Ladder Score", "type": "quantitative", "title": "Happiness Score"},
     "color": {
       "field": "Regional Indicator"
     }

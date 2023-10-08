@@ -3,10 +3,18 @@
     "description": "Vega-Lite version of bar chart from https://observablehq.com/@d3/learn-d3-scales.",
     "width": 600,
     "height": 350,
+    "title": {
+    "text": "Top 10 Happinest Countries",
+    "fontSize": 20,
+    "offset": 20
+  },
     "config": {
       "background":"#FFF3E2",
       "view": {"stroke": "transparent"},
-      "axis": {"grid": false}
+      "axis": {
+        "grid": false
+      },
+      "axisY": {"titleFontSize": 20}
     },
     "data": {
       "values": [
@@ -30,7 +38,7 @@
       ],
     "encoding": {
       "y": {"field": "name", "type": "nominal", "sort": "-x", "title": null},
-      "x": {"field": "value", "type": "quantitative", "title": null}
+      "x": {"field": "value", "type": "quantitative", "title": null, "axis": null}
     },
     "layer": [{
       "mark": "bar",
@@ -42,7 +50,8 @@
           "scale": {
             "type": "ordinal",
             "range": ["#ffe7e7","#ffdbdb","#ffcece","#ffbbbb", "#ff9e9e", "#FB928E"]
-          } 
+          },
+          "legend": null 
         },
         "tooltip": [
             {"field": "country", "type": "nominal", "title":"Country"},
