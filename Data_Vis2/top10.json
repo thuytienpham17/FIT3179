@@ -3,9 +3,13 @@
     "description": "Vega-Lite version of bar chart from https://observablehq.com/@d3/learn-d3-scales.",
     "width": 550,
     "height": 300,
-   
+    "title": {
+      "text": "Top 10 Happiest Countries",
+      "fontSize": 20,
+      "offset": 25
+    },
     "config": {
-      "background":"#FFECF1",
+      "background":"#fafafa",
       "view": {"stroke": "transparent"},
       "axis": {
         "grid": false

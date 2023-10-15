@@ -5,6 +5,7 @@ body {
 }
 }
 
+
 .all_page {
     width: 1300px;
     margin: auto;
@@ -16,15 +17,17 @@ body {
     padding-bottom: 30px;
 }
  
+
 /* World Happiness Score 2023 */
 .title {
     align-items: center;
-    background-color: #fea5c6;
+    background-color: #FB928E;
     background-size: 160%;
     display: flex;
     flex-direction: column;
     font-family: 'Trebuchet MS', sans-serif;
 }
+
 
 h1 {
     font-size: 70px;
@@ -33,73 +36,84 @@ h1 {
     text-align: center;
 }
 
+
 /* Map */
 #happiness_map {
     left: 65px;
     top: 70px;
 }
 
+
 #explain{
     font-size: 20px;
     text-align: center;
     margin-top: 100px;
     font-family: 'Trebuchet MS', sans-serif;
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
+
 
 /* Top 10 */
 .top10 {
-    width: 50%; 
     float: left;
     box-sizing: border-box;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     padding-left: 40px; 
     padding-right: 40px;
-    background-color: #FFECF1;
+    background-color: #fafafa;
     position: relative;
     width: 650px;
-    display: flex;
+    height: 380px;
     flex-direction: column;
 }
 
+
 #text.top10 {
     font-size: 20px;
+    padding-bottom: 50px;
+    padding-top: 80px;
     text-align: justify;
     font-family: 'Trebuchet MS', sans-serif;
-    padding-top: 40px;
-    padding-bottom: 45px;
 }
 
 /* Boxplot */
 .boxplot {
-    width: 50%; 
     float: right;
     box-sizing: border-box;
-    margin-top: 30px;
-    padding-bottom: 2px;
-    padding-left: 8px; 
+    padding-left: 40px; 
     padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    background-color: #fafafa;
+    position: relative;
+    width: 650px;
+    height: 499px;
 }
 
 #text.boxplot {
     font-size: 20px;
     text-align: justify;
     font-family: 'Trebuchet MS', sans-serif;
-    margin-top: 50px;
-    padding-top: 40px;
-    padding-bottom: 70px;
+    padding-top: 80px;
+    background-color: #fafafa;
 }
 
-
-h2 {
-    font-size: 50px;
+/* World Happiness Overview */
+#heading2 h2 {
+    font-size: 40px;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 10px;
     font-family:'Trebuchet MS', sans-serif;
+    align-items: center;
+    background-color: #FFCECE;
+    background-size: 160%;
+    display: flex;
+    flex-direction: column;
 }
+
 
 hr {
     height: 2px;
@@ -112,92 +126,76 @@ hr {
     margin-bottom: 30px;
 }
 
-#correlation h2 {
-    font-size: 50px;
+
+/* Key Happiness Determinants */
+.heading-container h3 {
+    font-size: 40px;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 10px;
-    font-family:'Trebuchet MS', sans-serif;
-}
-
-#correlation hr {
-    height: 2px;
-    width: 55%;
-    background-color: #333;
-    border: none;
-    margin-top: 1px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-}
-
-
-.correlation h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px 0;
-}   
-
-/* GDP and generosity */
-.gen,
-.gdp {
-    width: 50%; 
-    float: left;
-    box-sizing: border-box;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px; 
-    padding-right: 40px;
-    background-color: #FFECF1;
-    position: relative;
-    width: 650px;
+    font-family: 'Trebuchet MS', sans-serif;
+    align-items: center;
+    background-color: #FFCECE;
+    background-size: 160%;
     display: flex;
     flex-direction: column;
 }
 
-#text.gen,
-#text.gdp {
-    font-size: 20px;
-    text-align: justify;
-    font-family: 'Trebuchet MS', sans-serif;
-    padding-top: 40px;
-    padding-bottom: 130px;
+.heading-container hr {
+    height: 2px;
+    width: 55%;
+    background-color: #333;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+ 
+
+/* 4 charts */
+.container {
+    width: 1300px;
+    display: flex;
 }
 
-#text.gdp {
-    padding-top: 70px;
-    padding-bottom: 122px;
-}
-
-/* Life_expectancy and corruption */
-.life,
-.corr {
-    width: 50%; 
-    float: right;
+.gen_cor,
+.gdp_life {
+    width: 50%;
     box-sizing: border-box;
-    margin-top: 30px;
-    padding-bottom: 2px;
-    padding-left: 8px; 
-    padding-right: 40px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    padding-top: 10px; 
+    padding-bottom: 30px; 
 }
 
-#text.corr,
-#text.life {
+#generosity,
+#gdp {
+    margin-right: 5px;
+}
+
+#corruption,
+#life_expectancy {
+    margin-left: 5px;
+}
+
+/* explanation for 4 charts */
+.explain2{
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
     font-family: 'Trebuchet MS', sans-serif;
-    margin-top: 50px;
-    padding-top: 40px;
-    padding-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-#text.life {
-    margin-bottom: 150px;
-}
-
-footer {
+.footer {
     font-size: 15px;
     text-align: center;
     font-family: 'Trebuchet MS', sans-serif;
+    background-color: #fafafa;
 }
 

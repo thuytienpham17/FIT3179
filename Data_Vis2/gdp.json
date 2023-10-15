@@ -6,7 +6,7 @@
   "width": 400,
   "height": 300,
   "config": {
-    "background":"#FFECF1",
+    "background":"#fafafa",
     "view": {"stroke": "transparent"},
     "axis": {"grid": false},
     "axisX": {"titleFontSize": 13}, 

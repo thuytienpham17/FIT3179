@@ -2,6 +2,11 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 1000,
   "height": 400,
+  "title": {
+    "text": "World Happiness Score Map",
+    "fontSize": 25,
+    "offset": 25
+  },
   "config": {
     "background":"#FAFAFA",
     "view": {"stroke": "transparent"}
