@@ -4,21 +4,21 @@
     "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Data_Vis2/dataset2023.csv"
   },
   "width": 400,
-  "height": 350,
+  "height": 300,
   "config": {
-    "background":"#FFF3E2",
+    "background":"#FFECF1",
     "view": {"stroke": "transparent"},
     "axis": {"grid": false},
     "axisX": {"titleFontSize": 13}, 
       "axisY": {"titleFontSize": 13},
       "legend": {
         "titleFontSize": 13, 
-        "labelFontSize": 12
+        "labelFontSize": 12.5
       }
     },
     "title": {
       "text": "Generosity vs. Happiness",
-      "fontSize": 14.5,
+      "fontSize": 20,
       "offset": 25
     },
   "selection": {

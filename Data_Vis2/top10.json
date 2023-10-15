@@ -1,15 +1,11 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Vega-Lite version of bar chart from https://observablehq.com/@d3/learn-d3-scales.",
-    "width": 600,
-    "height": 350,
-    "title": {
-    "text": "Top 10 Happinest Countries",
-    "fontSize": 20,
-    "offset": 20
-  },
+    "width": 550,
+    "height": 300,
+   
     "config": {
-      "background":"#FFF3E2",
+      "background":"#FFECF1",
       "view": {"stroke": "transparent"},
       "axis": {
         "grid": false

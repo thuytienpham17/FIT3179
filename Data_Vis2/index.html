@@ -17,40 +17,50 @@
     <script src="corruption.js"></script>
     <script src="gdp.js"></script>
     <script src="life_expectancy.js"></script>
-    <script src="make_choice.js"></script>
-    <script src="social_support.js"></script>
 
     <link rel="stylesheet" href="css.css">
 </head>
 
 <body id="background">
     <div class="all_page">
-        <h1> World's Happiness Score 2023 </h1>
+        <div class="title" style="padding-top: 0%;">
+            <h1>World's Happiness Score 2023</h1> 
+        </div>
             <div id="happiness_map"></div>
-            <div id="explain">
-                <p class="explanation">Blank</p>
-            </div>
+            <div id="explain"> <p class="explanation">The World Happiness Score assesses the world's most joyful nations by considering diverse factors like GDP per capita, social assistance, life expectancy, the ability to make life decisions, acts of kindness, and views on corruption. This research involves surveying a representative group of individuals in each country, inviting them to rate their life satisfaction using a scale from 0 to 10, considering these various criteria. The collective happiness score for each nation is then determined by computing the average of these evaluations.</p> </div>
 
+        <div> <h2> World Happiness Overview </h2>
+        <hr>
+        </div>     
+        
         <div class="top">
-                <div id="boxplot"> <h2> Boxplot </h2> </div>
-                <div id="top10">  <h2> The Top 10 Happiest Countries </h2> </div>
-
-                <p>Blank</p>
+                <div class="top10" id="top10"> </div>
+                <div id="text" class="top10"> <p> <b>Finland</b> claims the title of the world's happiest nation, boasting a happiness index of 7.82. <b> Denmark</b> closely folows, securing the second sport with a happiness index of 7.64. These countries are renowned for their <u><i>high quality of life, robust social safety nets, and minimal corruption</i></u>, all of which contribute to the overall well-being of their residents. Rounding out the top ten is <b>New Zealand </b>, claiming the tenth spot as the world's happiest country with a happiness score of 7.2.</p> </div>
+               
+                <div class="boxplot" id="boxplot" > </div>
+                <div id="text" class="boxplot" > <p> This box plot provides a clear illustration of the happiness score distribution across diverse regions. Notably, <span style="color : #cabbb6"><b>Western Europe</b></span> boasts the highest average score. It's worth mentioning that the <span style="color : #86BC80"><b>Middle East and</b></span> <span style="color : #86bc80"><b>North Africa</b></span> encompasses only 21 countries, yet the scores range from 2.392 to 7.473, as indicated in the tooltip. The elongated whiskers in the box plot signify a significant degree of variability in scores within this region. In contrast, the <span style="color : #B279A3"><b>South Asia</b></span> region displays the narrowest range of scores, although it includes an outlier at 1.859, representing the lowest happiness score index globally. </p></div>   
         </div>
 
-        <div class="correlation">
-        <h2> The Relationship between Happiness Determinants and Happiness Score </h2>
-                <div id="generosity" class="gen_cor"></div>
-                <div id="corruption" class="gen_cor"></div>
-
-                <div id="gdp" class="gdp_life"></div>
-                <div id="life_expectancy" class="gdp_life"></div>
-
-                <div id="make_choice"  class="choice_social"></div>
-                <div id="social_support"  class="choice_social"></div> 
-                <p>Blank</p>
+        <div> <h2> Key Happiness Determinants </h2> 
+        <hr>
         </div>
-    </div>
+       
+        <div class="bottom">
+                <div class="gen" id="generosity"> </div>
+                <div id="text" class="gen"> <p>Generosity embodies a positive involvement in the community and represents a fundamental means through which individuals establish connections. Studies indicate that across different cultures, from early childhood, people are naturally inclined towards actions that are helpful to others. However, based on this scatter plot, it appears that there is no significant connection between generosity and happiness scores. The dots on the graph are dispersed in various directions, suggesting that we cannot draw a clear link between these two variables</p> </div>
+
+                <div class="corr" id="corruption"> </div>
+                <div id="text" class="corr"> <p>The perception of corruption reflects the level of trust that a country's citizens have in their government and in the goodwill of others. The research reveals that even in cases where people don't have strong trust in their government, they can still experience a high level of happiness. This is evident in the chart, where the majority of countries have a corruption perception index ranging from 0 to 0.35. There are only a few exceptions, primarily in Western European countries, where both the trust index and happiness score are notably high.</p> </div>
+
+                <div class="gdp" id="gdp"> </div>
+                <div id="text" class="gdp"> <p>Gross Domestic Product, which represents a country's total production, is divided by its population to calculate GDP per Capita. This metric offers insights into the economy's magnitude and its overall performance. As evident in the scatter plot, there is a discernible trend: countries with higher GDP per Capita tend to have higher Happiness scores, as evidenced by the presence of a noticeable linear relationship in the plot.</p> </div>
+
+                <div class="life" id="life_expectancy"> </div>
+                <div id="text" class="life"> <p>Healthy life expectancy related to both physical and mental health. Mental health is a key component of subjective well-being and also a risk factor for future physical health and longevity. A country with a higher healthy life expectancy index tends to have a higher happiness score. </p> </div>
+
+        </div>
 </body>
+
+<footer>  <p> - This visualisation is created by Thuy Tien Pham - </p> </footer>
 
 </html>

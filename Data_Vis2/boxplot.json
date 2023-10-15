@@ -3,15 +3,11 @@
   "data": {
     "url": "https://raw.githubusercontent.com/thuytienpham17/FIT3179/main/Data_Vis2/dataset2023.csv"
   },
-  "title": {
-    "text": "Happiness Score Range in Regions",
-    "fontSize": 20,
-    "offset": 20
-  },
-  "width": 450,
+
+  "width": 400,
   "height": 350,
   "config": {
-    "background": "#FFF3E2",
+    "background": "#FAFAFA",
     "view": { "stroke": "transparent" },
     "axis": {
       "grid": false,

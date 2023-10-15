@@ -1,67 +1,136 @@
 @media screen and (max-width: 1820px) {
-body{
+body {
     background-color: #fff6dd;
     background-color: #494949;   
 }
 }
 
 .all_page {
-    width: 1500px;
+    width: 1300px;
     margin: auto;
-    background-color: #FFF3E2;
+    background-color: #fafafa;
     text-align: center;
-    padding-left: 30px;
-    padding-right:30px;
+    padding-left: 40px;
+    padding-right:40px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
+ 
+/* World Happiness Score 2023 */
+.title {
+    align-items: center;
+    background-color: #fea5c6;
+    background-size: 160%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', sans-serif;
+}
 
 h1 {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bold;
     margin: 10px 0;
-    text-align: left;
-    padding-bottom: 20px;
-    padding-right: 200px;
+    text-align: center;
 }
 
-#year {
-    font-size: 50px;
-    color: red;
-}
-
+/* Map */
 #happiness_map {
-    text-align: left ;
-    font-family: "Helvetica";
-    left: 355px;
+    left: 65px;
+    top: 70px;
 }
 
-#boxplot,
-#top10 {
+#explain{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+/* Top 10 */
+.top10 {
     width: 50%; 
     float: left;
     box-sizing: border-box;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px; 
+    padding-right: 40px;
+    background-color: #FFECF1;
+    position: relative;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
 }
+
+#text.top10 {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Trebuchet MS', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 45px;
+}
+
+/* Boxplot */
+.boxplot {
+    width: 50%; 
+    float: right;
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding-bottom: 2px;
+    padding-left: 8px; 
+    padding-right: 40px;
+}
+
+#text.boxplot {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
 
 h2 {
-    font-size: 20px;
+    font-size: 50px;
     font-weight: bold;
-    margin: 20px 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family:'Trebuchet MS', sans-serif;
 }
 
-.top h2:last-child {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px 0;
+hr {
+    height: 2px;
+    width: 52%;
+    background-color: #333;
+    border: none;
+    margin-top: 1px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
 }
 
-.top p {
-    font-size: 15px;
-    margin: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+#correlation h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family:'Trebuchet MS', sans-serif;
 }
+
+#correlation hr {
+    height: 2px;
+    width: 55%;
+    background-color: #333;
+    border: none;
+    margin-top: 1px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
 
 .correlation h2 {
     font-size: 20px;
@@ -69,22 +138,66 @@ h2 {
     margin: 20px 0;
 }   
 
-.gen_cor,
-.gdp_life,
-.choice_social {
-    float: left; 
+/* GDP and generosity */
+.gen,
+.gdp {
     width: 50%; 
-    box-sizing: border-box; 
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 35px; 
-    padding-right: 35px;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px; 
+    padding-right: 40px;
+    background-color: #FFECF1;
+    position: relative;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
 }
 
-.correlation p:last-child {
+#text.gen,
+#text.gdp {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Trebuchet MS', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 130px;
+}
+
+#text.gdp {
+    padding-top: 70px;
+    padding-bottom: 122px;
+}
+
+/* Life_expectancy and corruption */
+.life,
+.corr {
+    width: 50%; 
+    float: right;
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding-bottom: 2px;
+    padding-left: 8px; 
+    padding-right: 40px;
+}
+
+#text.corr,
+#text.life {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+#text.life {
+    margin-bottom: 150px;
+}
+
+footer {
     font-size: 15px;
-    margin: 30px;
-    padding-bottom: 40px;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
 }
-
 

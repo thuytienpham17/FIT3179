@@ -13,12 +13,12 @@
       "axisY": {"titleFontSize": 13},
       "legend": {
         "titleFontSize": 13, 
-        "labelFontSize": 12
+        "labelFontSize": 13
       }
     },
     "title": {
       "text": "Social Support vs. Happiness",
-      "fontSize": 14.5,
+      "fontSize": 20,
       "offset": 25
     },
     "selection": {
