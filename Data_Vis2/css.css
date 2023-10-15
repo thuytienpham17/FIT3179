@@ -5,7 +5,6 @@ body {
 }
 }
 
-
 .all_page {
     width: 1300px;
     margin: auto;
@@ -40,14 +39,14 @@ h1 {
 /* Map */
 #happiness_map {
     left: 65px;
-    top: 70px;
+    top: 30px;
 }
 
 
 #explain{
     font-size: 20px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 70px;
     font-family: 'Trebuchet MS', sans-serif;
     margin-left: 50px;
     margin-right: 50px;
@@ -126,9 +125,12 @@ hr {
     margin-bottom: 30px;
 }
 
+br {
+    margin-bottom: 10px;
+}
 
 /* Key Happiness Determinants */
-.heading-container h3 {
+#heading3 h3 {
     font-size: 40px;
     font-weight: bold;
     margin-top: 30px;
@@ -137,11 +139,10 @@ hr {
     align-items: center;
     background-color: #FFCECE;
     background-size: 160%;
-    display: flex;
     flex-direction: column;
 }
 
-.heading-container hr {
+#heading3 hr {
     height: 2px;
     width: 55%;
     background-color: #333;
